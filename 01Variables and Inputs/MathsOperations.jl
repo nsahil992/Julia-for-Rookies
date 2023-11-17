@@ -7,6 +7,6 @@ println(number3)
 quotient = number1/number2
 product = number1 * number2
 difference = number1 - number2
-println(quotient)
-println(product)
-println(difference)
+println("quotient : ", quotient)
+println("product : ",  product)
+println("difference : ",  difference)

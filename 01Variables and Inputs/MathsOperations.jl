@@ -1,4 +1,4 @@
-# Do basic Maths operations
+# Do basic Maths operations using Julia
 
 number1 = 10
 number2 = 90

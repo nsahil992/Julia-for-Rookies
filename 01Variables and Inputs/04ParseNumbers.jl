@@ -1,0 +1,5 @@
+println("Enter the first number: ")
+number1 = parse(Int64, readline())
+println("Enter the second number: ")
+number2 = parse(Int64, readline())
+println("$(number1) * $(number2) = $(number1 * number2)")

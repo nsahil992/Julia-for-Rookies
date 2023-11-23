@@ -72,6 +72,8 @@ elseif user_action == "newfriend"
     friend_name = readline()
     push!(friends, friend_name)
     push!(lent, [])
+    # if user inputs newfriend then it will take the name of the friend and it will push the friends
+    # name into the friends array
 else
     println("Sorry, I didn't understand that. (Valid choices: give/takeback/newfriend):")
 end

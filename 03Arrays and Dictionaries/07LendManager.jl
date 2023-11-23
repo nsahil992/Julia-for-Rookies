@@ -4,22 +4,23 @@ while true
     println("What do you want to do?(i.e takeback/give/newfriend/quit)")
     user_action = readline() #takes user action
     if user_action == "quit"
-        break
+        break #if user inputs quit then break the loop and end
     end
-    if user_action == "takeback"
-        println("These are your friends")
-        for friend in friends
-            println(friend)
+    if user_action == "takeback" # if user inputs takeback
+        println("These are your friends") # it will show the user their friends
+        for friend in friends # for friend in friends array
+            println(friend) # print the names of friends
         end
         println("Which friend did you lent to? ")
-        friend_name = readline()
-        friend_index = findall(x -> x == friend_name, friends)
-        if length(friend_index) == 0
+        # if the user wants to take back something, he may have lent it to particular friend
+        friend_name = readline() # takes friend name from the user
+        friend_index = findall(x -> x == friend_name, friends) # finds weather the friend exit in array
+        if length(friend_index) == 0 # if it doesn't then it will print the message below
             println("Sorry, I didn't find that friend")
             continue
         else
-            friend_index = friend_index[1]
-            if(length(lent[friend_index])) == 0
+            friend_index = friend_index[1] # if friend exist
+            if(length(lent[friend_index])) == 0 # if length(lent) == 0 then user haven't given stuff
                 println("You haven't given anything to $(friend_name)")
                 continue
             end

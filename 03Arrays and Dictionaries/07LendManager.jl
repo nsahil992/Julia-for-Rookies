@@ -28,15 +28,19 @@ while true
             for item in lent[friend_index]
                 println(item)
             end
+            # prints the list of item
             println("What did you takeback from $(friend_name)")
             item_name = readline()
+            # takes user input what they have taken from the friend
              item_index = findall(x -> x == item_name, lent[friend_index])
               if length(item_index) == 0
                 println("Sorry, I did'nt find that item.")
+                # if it doesn't find the item then if will print the above
                 continue
             else
                 item_index = item_index[1]
                  deleteat!(lent[friend_index], item_index)
+                 # if it finds the item then it will delete the item from the lent array
                     println("Alright, I'll remember that you took $(item_name) from $(friend_name)")
             end
         end

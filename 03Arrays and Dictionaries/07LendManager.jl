@@ -48,18 +48,23 @@ while true
          println("These are your friends:")
            for friend in friends
             println(friend)
+            # if user inputs give then it will print the list of friends 
         end
         println("Which friend did you lend to? ")
          friend_name = readline()
+         # it will take the friends name from the user
          friend_index = findall(x -> x == friend_name, friends)
          if length(friend_index) == 0
+            # if the length of friends index is 0 then it will print the following
             println("Sorry, I didn't find that friend.")
         continue
     else
         friend_index = friend_index[1]
+        # if it finds the friend then it will ask the user what they have lent
         println("What did you lend to $(friend_name)?")
         item_name = readline()
         push!(lent[friend_index], item_name)
+        # it will push the item name in lent array
         println("Got it! You lent $(item_name) to $(friend_name).")
     end
 elseif user_action == "newfriend"

@@ -5,3 +5,5 @@ word_meanings = Dict{String, String}("air" => "A mixture of gases that forms our
 # => are the operators
 # A mixture of if the values that are associated with the keys
 println(word_meanings["air"])
+println(keys(word_meanings))
+println(values(word_meanings))

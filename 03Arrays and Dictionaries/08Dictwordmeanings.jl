@@ -7,5 +7,5 @@ word_meanings = Dict{String, String}("air" => "A mixture of gases that forms our
 println(word_meanings["air"])
 println(keys(word_meanings))
 println(values(word_meanings))
-word_meanings["card"] = "A rectangular piece of plastic or thick paper"
+word_meanings["card"] = "A rectangular piece of plastic or thick paper" # adds card to dictionary
 println(word_meanings)

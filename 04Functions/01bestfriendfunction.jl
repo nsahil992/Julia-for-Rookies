@@ -23,3 +23,16 @@ while true
      end
      push!(friends, user_input)
  end
+ println("Who do you not like? ")
+not_friends = []
+while true
+    println("Name: ")
+    user_input = readline()
+    if user_input == "done"
+        break
+    end
+    push!(not_friends, user_input)
+end
+println("Your best friends are: ", best_friends)
+println("Your friends are: ", friends)
+println("Your not friends are: ", not_friends)

@@ -7,4 +7,5 @@ function add_one(original_number::Int64)
     # user will give the original number
 end
 add_one(3)
-# when we call the function by passing value 3 to it, it will add + 1 to it
+add_one(4)
+# when we call the function by passing values 3 and 4 to it, it will add + 1 and give us the result
